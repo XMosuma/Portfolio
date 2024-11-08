@@ -90,3 +90,40 @@ body{
 .Home h1 span{
     color:var(--yellow);
 }
+/* Hide descriptions by default */
+.description {
+    padding-left: 4rem;
+    display: none;
+    margin-top: 0.5rem;
+    color: hsl(98, 52%, 96%);
+    font-size: 2rem;
+    line-height: 1.5;
+   
+}
+
+.trait {
+    align-items: center;
+    padding-left: 40rem; /* Default padding */
+    font-weight: bold;
+    color: var(--yellow);
+    cursor: pointer;
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    transition: padding-left 0.3s ease, color 0.3s ease; /* Smooth transition for padding and color */
+}
+
+/* When the trait is hovered */
+.trait:hover {
+    color: var(--hover-color); /* Change the color on hover (you can define the hover color) */
+}
+
+/* When the trait has the 'active' class */
+.trait.active {
+    padding-left: 1rem; /* Adjusted padding when clicked */
+}
+
+/* Optional: Change the appearance of the trait when it is hovered and active */
+.trait.active:hover {
+    color: var(--active-hover-color); /* Change color when active and hovered */
+}
