@@ -463,3 +463,36 @@ body{
     }
 
  }
+ /* For tablets and smaller devices */
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        justify-content: flex-start; /* Aligns items to the left on smaller screens */
+        padding-left: 10px; /* Adds padding to the left */
+    }
+
+    .navbar ul li {
+        margin-right: 10px; /* Reduces space between items */
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+    .navbar ul {
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
+
+    .navbar ul li {
+        margin-right: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
