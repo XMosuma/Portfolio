@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --gray:rgba(128, 128, 128, 0.815);
+    --yellow: #FFD700; /* Default color */
+    --hover-color: #FFA500; /* Hover color */
+    --active-hover-color: #FF6347; /* Hover color when active */
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.Home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.Home h3{
+    font-size: 2.5rem;
+    color:blue;
+}
+
+.Home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.Home h1 span{
+    color:var(--yellow);
+}
+body{
+    background:rgb(4, 74, 77);
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
