@@ -2,8 +2,8 @@
 
 :root{
     --gray:rgba(128, 128, 128, 0.815);
-    --yellow: #FFD700; /* Default color */
-    --hover-color: #FFA500; /* Hover color */
+    --yellow: #ecde8b; /* Default color */
+    --hover-color: #ff9100; /* Hover color */
     --active-hover-color: #FF6347; /* Hover color when active */
 }
 
@@ -36,6 +36,100 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background:var(--yellow);
 }
+body{
+    background:rgb(35, 108, 110);
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.user img{
+    height:17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
+.user h3{
+    margin:0 6rem;
+    font-size: 2rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#FFD700;;
+}
+.btn{
+    padding:.7rem 3rem;
+    background:rgb(26, 2, 2);
+    color:rgb(8, 31, 95);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+.btn:hover{
+    background:rgb(3, 136, 14);
+}
+.user h2{
+    font-size: 2rem;
+    color:rgb(15, 67, 136);
+}
+.post{
+    font-size: 2rem;
+    color:gray;
+}
+.navbar{
+    width:100%;
+}
+.navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+.navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.navbar ul li a:hover{
+    background:rgb(3, 136, 14);
+}
 #menu{
     position: fixed;
     top:2rem; right:2rem;
@@ -67,7 +161,7 @@ html::-webkit-scrollbar-thumb{
     color:var(--yellow);
 }
 body{
-    background:rgb(4, 74, 77);
+    background:rgba(68, 52, 43, 0.933);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -79,12 +173,12 @@ body{
 }
 .Home h3{
     font-size: 2.5rem;
-    color:blue;
+    color:rgba(19, 3, 3, 0.719);
 }
 
 .Home h1{
     font-size:5rem;
-    color:#fff;
+    color:rgb(15, 15, 15);
 }
 
 .Home h1 span{
@@ -123,7 +217,8 @@ body{
     padding-left: 1rem; /* Adjusted padding when clicked */
 }
 
-/* Optional: Change the appearance of the trait when it is hovered and active */
+/*Change the appearance of the trait when it is hovered and active */
 .trait.active:hover {
     color: var(--active-hover-color); /* Change color when active and hovered */
 }
+
