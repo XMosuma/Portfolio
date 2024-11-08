@@ -267,7 +267,37 @@ body{
     color:#fff;
     background:var(--yellow);
 }
+.Projects .box-container{
+    background:rgba(43, 68, 44, 0.933);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.Projects .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .5rem solid #fff;
+    position: relative;
+    
+}
+.Projects .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+.Projects .box-container .box img{
+    height:10%;
+    width:10%;
+    object-fit: cover;
+}
 
+.Projects .box-container .box:hover img{
+    transform: scale(1.2);
+}
 
 
 
