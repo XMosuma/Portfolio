@@ -71,3 +71,22 @@ body{
     overflow-x: hidden;
     padding-left: 35rem;
 }
+.Home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.Home h3{
+    font-size: 2.5rem;
+    color:blue;
+}
+
+.Home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.Home h1 span{
+    color:var(--yellow);
+}
