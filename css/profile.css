@@ -186,6 +186,7 @@ body{
 }
 /* Hide descriptions by default */
 .description {
+    background:rgba(184, 109, 12, 0.933);
     padding-left: 4rem;
     display: none;
     margin-top: 0.5rem;
@@ -221,6 +222,75 @@ body{
 .trait.active:hover {
     color: var(--active-hover-color); /* Change color when active and hovered */
 }
+
+.Education .box-container{
+    background:rgba(43, 68, 44, 0.933);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.Education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .5rem solid #fff;
+    position: relative;
+}
+.Education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:rgb(83, 75, 5);
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+.Education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+.Education .box-container .box h2{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+.Education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--yellow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
