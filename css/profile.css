@@ -222,3 +222,83 @@ body{
     color: var(--active-hover-color); /* Change color when active and hovered */
 }
 
+
+
+
+/* General styles for the Contact Section */
+.Contact {
+    padding: 2rem;
+    background-color: #222; /* Example background color */
+    color: #eee;
+}
+
+.Contact .heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.Contact .row {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Content styling */
+.Contact .content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Contact .content h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.Contact .content h3 i {
+    padding-right: 0.8rem;
+    color: var(--yellow);
+}
+
+/* Link styling */
+.Contact .content a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.Contact .content a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox and Grid layout adjustments for larger screens */
+@media (min-width: 768px) {
+    .Contact .row {
+        grid-template-columns: 1fr 1fr; /* Two columns layout */
+        gap: 3rem;
+    }
+}
+
+/* Adjusting layout and font sizes for even larger screens */
+@media (min-width: 1024px) {
+    .Contact {
+        padding: 4rem;
+    }
+
+    .Contact .heading {
+        font-size: 4rem;
+    }
+
+    .Contact .row {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        align-items: start;
+    }
+
+    .Contact .content h3 {
+        font-size: 2rem;
+    }
+}
