@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --gray:rgba(128, 128, 128, 0.815);
+    --yellow: #ecde8b; /* Default color */
+    --hover-color: #ff9100; /* Hover color */
+    --active-hover-color: #FF6347; /* Hover color when active */
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+body{
+    background:rgb(35, 108, 110);
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.user {
+    text-align: center;
+    color: #eee;
+    padding: 2rem;
+    background-color: #333;
+}
+
+.user img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.user .post {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.user h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #eee;
+    margin: 0.5rem 0;
+}
+
+.user h3 i {
+    margin-right: 0.8rem;
+    color: var(--yellow); /* Customize the color */
+}
+
+.user a {
+    color: var(--yellow); /* Customize link color */
+    text-decoration: none;
+}
+
+.user a:hover {
+    text-decoration: underline;
+}
+
+/* Email icon */
+.user h3.email i {
+    font-size:x-large;
+    color: #1da1f2; /* Example: blue color for email */
+}
+
+/* LinkedIn icon */
+.user h3.linkedin i {
+    font-size: large;
+    color: #0077b5; /* Example: LinkedIn blue */
+}
+
+/* Phone icon */
+.user h3.phone i {
+    font-size: large;
+    color: #34a853; /* Example: green for phone */
+}
+
+/* Address icon */
+.user h3.address i {
+    font-size: large;
+    color: #ff6347; /* Example: tomato red for address */
+}
+
+/* Optional: Hover effect to make icons slightly lighter on hover */
+.user h3 i:hover {
+    filter: brightness(1.2);
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background:rgb(26, 2, 2);
+    color:rgb(8, 31, 95);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+.btn:hover{
+    background:rgb(3, 136, 14);
+}
+.user h2{
+    font-size: 2rem;
+    color:rgb(15, 67, 136);
+}
+.post{
+    font-size: 2rem;
+    color:gray;
+}
+.navbar{
+    width:100%;
+}
+.navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+.navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.navbar ul li a:hover{
+    background:rgb(3, 136, 14);
+}
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.Home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.Home h3{
+    font-size: 2.5rem;
+    color:blue;
+}
+
+.Home h1{
+    font-size:5rem;
+    color:#fff;
+}
+
+.Home h1 span{
+    color:var(--yellow);
+}
+body{
+    background:rgba(68, 52, 43, 0.933);
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+.Home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.Home h3{
+    font-size: 2.5rem;
+    color:rgba(19, 3, 3, 0.719);
+}
+
+.Home h1{
+    font-size:5rem;
+    color:rgb(15, 15, 15);
+}
+
+.Home h1 span{
+    color:var(--yellow);
+}
+.About i{
+    color:#16026d;
+}
+/* Hide descriptions by default */
+.description {
+    background:rgba(184, 109, 12, 0.933);
+    padding-left: 4rem;
+    display: none;
+    margin-top: 0.5rem;
+    color: hsl(98, 52%, 96%);
+    font-size: 2rem;
+    line-height: 1.5;
+   
+}
+
+.trait {
+    align-items: center;
+    padding-left: 40rem; /* Default padding */
+    font-weight: bold;
+    color: var(--yellow);
+    cursor: pointer;
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    transition: padding-left 0.3s ease, color 0.3s ease; /* Smooth transition for padding and color */
+}
+
+/* When the trait is hovered */
+.trait:hover {
+    color: var(--hover-color); /* Change the color on hover (you can define the hover color) */
+}
+
+/* When the trait has the 'active' class */
+.trait.active {
+    padding-left: 1rem; /* Adjusted padding when clicked */
+}
+
+/*Change the appearance of the trait when it is hovered and active */
+.trait.active:hover {
+    color: var(--active-hover-color); /* Change color when active and hovered */
+}
+
+.Education .box-container{
+    background:rgba(43, 68, 44, 0.933);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.Education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .5rem solid #fff;
+    position: relative;
+}
+.Education .box-container .box span{
+    font-size: 1.3rem;
+    background:#222;
+    color:rgb(83, 75, 5);
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+.Education .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+.Education .box-container .box h2{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+.Education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#16026d;
+    background:var(--yellow);
+}
+.Education .box-container .box .icon-work {
+    font-size: 24px;
+    color: #4CAF50;
+}
+.Projects .box-container{
+    background:rgba(43, 68, 44, 0.933);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+.Projects .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .5rem solid #fff;
+    position: relative;
+    
+}
+.Projects .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1.5rem;
+}
+.Projects .box-container .box img{
+    height:10%;
+    width:10%;
+    object-fit: cover;
+}
+
+.Projects .box-container .box:hover img{
+    transform: scale(1.2);
+}
+.Contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Contact .row .content h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #92af0f;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.Contact .row .content h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.Contact .row .content a {
+    color: var(--yellow); /* Set the color of links to match the icon */
+    text-decoration: none;
+}
+
+.Contact .row .content a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+
+/* additional styling */
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
+ /* For tablets and smaller devices */
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        justify-content: flex-start; /* Aligns items to the left on smaller screens */
+        padding-left: 10px; /* Adds padding to the left */
+    }
+
+    .navbar ul li {
+        margin-right: 10px; /* Reduces space between items */
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+    .navbar ul {
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
+
+    .navbar ul li {
+        margin-right: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
