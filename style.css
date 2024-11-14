@@ -131,7 +131,7 @@ header{
     filter: brightness(1.2);
 }
 
-.btn{
+/* .btn{
     padding:.7rem 3rem;
     background:rgb(26, 2, 2);
     color:rgb(8, 31, 95);
@@ -139,12 +139,24 @@ header{
     margin-top: 1rem;
     font-size: 2rem;
     border-radius: 5rem;
-}
+}*/
 
 .btn i{
     padding:0 .5rem;
     font-size: 1.8rem;
+} 
+
+.btn {
+   
+    padding:.7rem 3rem;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
 }
+
 .heading{
     text-align: center;
     margin:0 6rem;
