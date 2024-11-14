@@ -41,9 +41,9 @@ body{
     overflow-x: hidden;
     padding-left: 35rem;
 }
-
+/* General styling for sections */
 section{
-    min-height: 100vh;
+    min-height: 40vh;
     padding:1rem;
 }
 header{
@@ -327,7 +327,7 @@ body{
     color:#16026d;
     background:var(--yellow);
 }
-.Education .box-container .box .icon-work {
+.Experience .box-container .box .icon-work {
     font-size: 24px;
     color: #4CAF50;
 }
