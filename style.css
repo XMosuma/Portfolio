@@ -55,9 +55,19 @@ header{
     background:#1a1a1a;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-flow: column;
     text-align: center;
+    overflow-y: auto;
+    padding: 2rem;
+}
+header::-webkit-scrollbar {
+    width: 8px;
+}
+
+header::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 10px;
 }
 .user {
     text-align: center;
@@ -130,16 +140,6 @@ header{
 .user h3 i:hover {
     filter: brightness(1.2);
 }
-
-/* .btn{
-    padding:.7rem 3rem;
-    background:rgb(26, 2, 2);
-    color:rgb(8, 31, 95);
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 2rem;
-    border-radius: 5rem;
-}*/
 
 .btn i{
     padding:0 .5rem;
@@ -277,23 +277,27 @@ body{
     display: block;
     margin-top: 2rem;
     font-size: 2rem;
-    transition: padding-left 0.3s ease, color 0.3s ease; /* Smooth transition for padding and color */
+    transition: padding-left 0.3s ease, color 0.3s ease;
 }
 
 /* When the trait is hovered */
 .trait:hover {
-    color: var(--hover-color); /* Change the color on hover (you can define the hover color) */
+    color: var(--hover-color);
 }
 
 /* When the trait has the 'active' class */
 .trait.active {
-    padding-left: 1rem; /* Adjusted padding when clicked */
+    padding-left: 1rem; 
 }
 
 /*Change the appearance of the trait when it is hovered and active */
 .trait.active:hover {
-    color: var(--active-hover-color); /* Change color when active and hovered */
+    color: var(--active-hover-color);
 }
+ .trait.active + .description {
+    display: block;
+  }
+
 
 .Education .box-container{
     background:rgba(43, 68, 44, 0.933);
@@ -326,6 +330,7 @@ body{
 .Education .box-container .box h2{
     font-size: 1.4rem;
     padding: 1rem 0;
+    
 }
 .Education .box-container .box i{
     position: absolute;
@@ -343,6 +348,31 @@ body{
     font-size: 24px;
     color: #4CAF50;
 }
+.skills {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skills .heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .skills .heading span {
+    color: #ecde8b; /* Matches your existing theme */
+  }
+  
+  .skills-container {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .skill {
+    margin: 10px 0;
+  }
+
 .Projects .box-container{
     background:rgba(43, 68, 44, 0.933);
     display: flex;
