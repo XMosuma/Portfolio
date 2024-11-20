@@ -37,14 +37,8 @@ $(document).ready(function(){
   
   });
   
-    function toggleDescription(id, element) {
-      const description = document.getElementById(id);
-      if (description.style.display === "none" || description.style.display === "") {
-          description.style.display = "block";
-      } else {
-          description.style.display = "none";
-      }
-  
-      // Toggle the 'active' class to change the padding-left of the trait
-      element.classList.toggle('active');
-}
+document.querySelectorAll('.trait').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
