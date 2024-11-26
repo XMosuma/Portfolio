@@ -270,14 +270,14 @@ body{
 
 .trait {
     align-items: center;
-    padding-left: 40rem; /* Default padding */
+   text-align: center;
     font-weight: bold;
     color: var(--yellow);
     cursor: pointer;
     display: block;
     margin-top: 2rem;
     font-size: 2rem;
-    transition: padding-left 0.3s ease, color 0.3s ease;
+    
 }
 
 /* When the trait is hovered */
