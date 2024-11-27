@@ -481,6 +481,35 @@ body{
     background-color: #bfd30f;
     border-radius: 5px;
   }
+  .chatbox-input {
+    display: flex;
+    padding: 10px;
+    background: #ca1d1d;
+    border-top: 1px solid #ca0202;
+  }
+  
+  .chatbox-input input {
+    flex: 1; /* Expands the input box to fit */
+    padding: 10px;
+    border: 1px solid #1d1b1b;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .chatbox-input button {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chatbox-input button:hover {
+    background: #24b300;
+  }
+  
   /* Rest of the CSS for chatbox styling remains the same */
   
 
