@@ -77,7 +77,7 @@ $(document).ready(function () {
       'how are you': "I'm just a bot, but I'm here to help! What can I do for you?",
       hey: 'Hey there! Feel free to ask me about my skills, experience, or projects.',
       skills: 'I am skilled in Python, PHP, Flutter, HTML5, CSS3, and JavaScript.',
-      experience: 'I have 1 year of experience as a PHP Backend Developer at Mukuru and 6 months as a Junior Data Analyst.',
+      experience: 'I have 1 year of experience as a PHP Backend Developer at Mukuru.',
       projects: 'I have worked on several projects, including ride-sharing apps, subscription systems, and gym management apps.',
       education: 'I hold a Diploma in Computer System Engineering, which I completed in 2020.',
       school: 'I attended Hlanganani Secondary School from 2011 to 2015, where I focused on subjects such as mathematics, science.',
