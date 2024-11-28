@@ -470,12 +470,6 @@ body{
     flex-direction: column;
     z-index: 999;
   }
-    /* Chatbox Messages Styling */
-.chatbox-messages {
-    flex: 1;
-    overflow-y: auto;
-    padding: 10px;
-  }
 
   .chatbox-messages::-webkit-scrollbar-thumb {
     background-color: #bfd30f;
@@ -500,16 +494,43 @@ body{
     margin-left: 10px;
     padding: 10px;
     border: none;
-    background: #007bff;
+    background: #09a557;
     
     border-radius: 5px;
     cursor: pointer;
   }
   
   .chatbox-input button:hover {
-    background: #24b300;
+    background: #1e0285;
+  }
+  .message-sent {
+    background-color: #a4c006;
+    color: rgb(29, 31, 29);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    align-self: flex-end;
+    max-width: 70%;
   }
   
+  .message-received {
+    background-color: #f1f1f1;
+    color: #ec08bb;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    align-self: flex-start;
+    max-width: 70%;
+  }
+  
+  .chatbox-messages {
+    color: #ec08bb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+  }
   /* Rest of the CSS for chatbox styling remains the same */
   
 
