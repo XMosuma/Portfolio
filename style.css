@@ -2,8 +2,8 @@
 
 :root{
     --gray:rgba(128, 128, 128, 0.815);
-    --yellow: #ecde8b; /* Default color */
-    --hover-color: #ff9100; /* Hover color */
+    --black: #eee;
+    --hover-color: #0dc00dc4; /* Hover color */
     --active-hover-color: #FF6347; /* Hover color when active */
 }
 
@@ -150,7 +150,7 @@ header::-webkit-scrollbar-thumb {
    
     padding:.7rem 3rem;
     color: white;
-    background-color: #007bff;
+    background-color: #131518;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -230,7 +230,7 @@ header::-webkit-scrollbar-thumb {
     color:var(--yellow);
 }
 body{
-    background:rgba(68, 52, 43, 0.933);
+    background:black;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -242,37 +242,38 @@ body{
 }
 .Home h3{
     font-size: 2.5rem;
-    color:rgba(19, 3, 3, 0.719);
+    color:#eee;
 }
 
 .Home h1{
     font-size:5rem;
-    color:rgb(15, 15, 15);
+    color:rgb(79, 114, 34);
 }
 
 .Home h1 span{
     color:var(--yellow);
 }
 .About i{
-    color:#16026d;
+    color:rgb(6, 64, 119);
 }
 /* Hide descriptions by default */
 .description {
-    background:rgba(184, 109, 12, 0.933);
     padding-left: 4rem;
     display: none;
     margin-top: 0.5rem;
-    color: hsl(98, 52%, 96%);
+    color: #36d80d;
     font-size: 2rem;
     line-height: 1.5;
    
 }
-
+strong.trait {
+    color: #007BFF;
+  }
 .trait {
+    color: #007BFF;
     align-items: center;
-   text-align: center;
+    text-align: center;
     font-weight: bold;
-    color: var(--yellow);
     cursor: pointer;
     display: block;
     margin-top: 2rem;
@@ -300,7 +301,6 @@ body{
 
 
 .Education .box-container{
-    background:rgba(43, 68, 44, 0.933);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -312,7 +312,7 @@ body{
     width:27rem;
     margin:4rem 1rem;
     padding-left: 4rem;
-    border-left: .5rem solid #fff;
+    border-left: .5rem solid #b81212;
     position: relative;
 }
 .Education .box-container .box span{
@@ -324,12 +324,13 @@ body{
 }
 .Education .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:#04c444;
     padding-top: 1.5rem;
 }
 .Education .box-container .box h2{
     font-size: 1.4rem;
     padding: 1rem 0;
+    color:#eeee;
     
 }
 .Education .box-container .box i{
@@ -340,13 +341,38 @@ body{
     border-radius: 50%;
     line-height: 5rem;
     text-align: center;
-    font-size: 2rem;
-    color:#16026d;
+    font-size: 5rem;
     background:var(--yellow);
+}
+/* Specific icon colors */
+.Education .box-container .box:nth-child(1) i {
+    color: #fff; /* Green for the first icon */
+}
+
+.Education .box-container .box:nth-child(2) i {
+    color: #0480d3; /* Blue for the second icon */
+}
+
+.Education .box-container .box:nth-child(3) i {
+    color: #380feb; /* Red for the third icon */
+}
+.Education .box-container .box:nth-child(4) i {
+    color: #09e727; /* Green for the first icon */
+}
+
+.Education .box-container .box:nth-child(5) i {
+    color: #dbd80a; /* Blue for the second icon */
+}
+
+.Education .box-container .box:nth-child(6) i {
+    color: #e6220c; /* Red for the third icon */
 }
 .Experience .box-container .box .icon-work {
     font-size: 24px;
     color: #4CAF50;
+}
+.skills h1{
+    color: #eee;
 }
 .skills {
     margin-top: 50px;
@@ -356,13 +382,9 @@ body{
   
   .skills .heading {
     font-size: 3rem;
-    color: #2c3e50;
     margin-bottom: 20px;
   }
   
-  .skills .heading span {
-    color: #ecde8b; /* Matches your existing theme */
-  }
   
   .skills-container {
     padding: 20px;
@@ -374,7 +396,6 @@ body{
   }
 
 .Projects .box-container{
-    background:rgba(43, 68, 44, 0.933);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -455,8 +476,9 @@ body{
     font-size:3rem;
   }
  /* Hide chatbox initially */
- .chatbox {
-    display: none; /* Hidden by default */
+.chatbox {
+    display: flex; /* Use flexbox for positioning */
+    flex-direction: column; /* Stack children vertically */
     width: 300px;
     height: 300px;
     background: #e3e7e2;
@@ -466,72 +488,83 @@ body{
     position: fixed;    
     bottom: 90px;
     right: 20px;
+    z-index: 999;
+}
+
+/* Chat messages styling */
+.chatbox-messages {
+    color: #000;
     display: flex;
     flex-direction: column;
-    z-index: 999;
-  }
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 10px;
+    flex-grow: 1; /* Makes the message area grow to take up remaining space */
+}
 
-  .chatbox-messages::-webkit-scrollbar-thumb {
-    background-color: #bfd30f;
-    border-radius: 5px;
-  }
-  .chatbox-input {
+/* Input area */
+.chatbox-input {
     display: flex;
     padding: 10px;
-    background: #ca1d1d;
-    border-top: 1px solid #ca0202;
-  }
-  
-  .chatbox-input input {
-    flex: 1; /* Expands the input box to fit */
+    background: #080101;
+    border-top: 1px solid #160707;
+    align-items: center; /* Aligns the input and button vertically */
+}
+
+/* Input field */
+.chatbox-input input {
+    flex: 1; 
+    font-weight: bold;
     padding: 10px;
     border: 1px solid #1d1b1b;
     border-radius: 5px;
     outline: none;
-  }
-  
-  .chatbox-input button {
+}
+
+/* Send button */
+.chatbox-input button {
     margin-left: 10px;
     padding: 10px;
     border: none;
     background: #09a557;
-    
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .chatbox-input button:hover {
+}
+
+/* Button hover effect */
+.chatbox-input button:hover {
     background: #1e0285;
-  }
-  .message-sent {
-    background-color: #a4c006;
+}
+
+/* Scrollbar customization */
+.chatbox-messages::-webkit-scrollbar-thumb {
+    background-color: #bfd30f;
+    border-radius: 5px;
+}
+
+/* Sent message styling */
+.message-sent {
+    background-color: #06c01f;
     color: rgb(29, 31, 29);
     padding: 10px;
     border-radius: 8px;
     margin: 5px;
     align-self: flex-end;
     max-width: 70%;
-  }
-  
-  .message-received {
-    background-color: #f1f1f1;
-    color: #ec08bb;
+}
+
+/* Received message styling */
+.message-received {
+    background-color:gray;
+    color: #eee;
     padding: 10px;
     border-radius: 8px;
     margin: 5px;
     align-self: flex-start;
     max-width: 70%;
-  }
-  
-  .chatbox-messages {
-    color: #ec08bb;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow-y: auto;
-    max-height: 400px;
-  }
-  /* Rest of the CSS for chatbox styling remains the same */
+}
+
   
 
 /* additional styling */
