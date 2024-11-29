@@ -103,7 +103,6 @@ $(document).ready(function () {
         return responses[keyword]; // Return the matching response
       }
     }
-
     // Fallback response for invalid questions
     return "I'm sorry, I can only answer questions related to my portfolio. Please ask about my skills, projects, experience, education, or more about me.";
   }
