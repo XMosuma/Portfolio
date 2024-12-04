@@ -89,6 +89,7 @@ $(document).ready(function () {
         3. Accountability - Constantly striving for excellence, I take ownership and responsibility.
         4. Communication - I believe that communication is at the heart of collaboration.`,
       certificates:  "I have completed certifications in HTML5, CSS5, Global HealhCare Hackathon(2nd place), and Python development, among others",
+      certification:  "I have completed certifications in HTML5, CSS5, Global HealhCare Hackathon(2nd place), and Python development, among others",
       location: "I am based in Guaten 1632 Midrand 1121 Kaalfontain Ext2 Glassnose Street.",
       address: "I am based in Guaten 1632 Midrand 1121 Kaalfontain Ext2 Glassnose Street.",
       license: "I hold a valid professional license in software development."
