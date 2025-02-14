@@ -1,6 +1,13 @@
 # My Portfolio Website
 # link : https://xmosuma.github.io/Portfolio/
 
+# run through Docker
+docker-compose build "for building docker image"
+docker-compose up "starting docker up"
+docker-compose down "it stops and removes the container"
+docker-compose stop "stop the container without removing it "
+docker-compose start "start up after stop"
+
 ## Description
 This is my personal portfolio website, designed to showcase my skills, projects, work experience, and contact details. The website is built using HTML, CSS, and JavaScript to create a clean and responsive layout, with interactive features such as clickable icons for easy navigation.
 
