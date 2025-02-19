@@ -1,5 +1,6 @@
 # My Portfolio Website
 # link : https://xmosuma.github.io/Portfolio/
+# AWS link: http://portfolio-bucket-web.s3-website-us-east-1.amazonaws.com/
 
 # run through Docker
 docker-compose build "for building docker image"
