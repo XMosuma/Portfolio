@@ -482,15 +482,34 @@ body{
     color:#fff;
     padding-top: 1.5rem;
 }
-.Projects .box-container .box img{
-    height:10%;
-    width:10%;
-    object-fit: cover;
+.Projects .box-container .box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: blueviolet;
 }
+
+.Projects .box-container .box h3,
+.Projects .box-container .box p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.Projects .box-container .box img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.Projects .box-container .box i {
+    margin-bottom: 1rem;
+}
+
 
 .Projects .box-container .box:hover img{
     transform: scale(1.2);
 }
+
 .Contact .row {
     display: flex;
     align-items: center;

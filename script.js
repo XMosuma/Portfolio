@@ -79,6 +79,7 @@ $(document).ready(function () {
       skills: 'I am skilled in Python, PHP, Flutter, HTML5, CSS3, and JavaScript.',
       experience: 'I have 1 year of experience as a PHP Backend Developer at Mukuru.',
       projects: 'I have worked on several projects, including ride-sharing apps, subscription systems, and gym management apps.',
+      project: 'I have worked on several projects, including ride-sharing apps, subscription systems, and gym management apps.',
       education: 'I hold a Diploma in Computer System Engineering, which I completed in 2020.',
       school: 'I attended Hlanganani Secondary School from 2011 to 2015, where I focused on subjects such as mathematics, science.',
       university: 'I completed my Diploma at Tshwane University of Technology, where I majored in Computer System Engineering and gained a strong foundation in software development and problem-solving.',
@@ -129,4 +130,7 @@ $(document).ready(function () {
       sendBtn.click();
     }
   });
+ document.getElementById("year").textContent = new Date().getFullYear();
 });
+
+
