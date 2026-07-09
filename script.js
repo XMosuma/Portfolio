@@ -43,6 +43,25 @@ $(document).ready(function () {
   const chatInput = document.querySelector('.chatbox-input input');
   const sendBtn = document.querySelector('.chatbox-input button');
   const closeBtn = document.querySelector('.close-btn');
+  const showMoreBtn = document.getElementById("showMoreBtn");
+  const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+
+  let expanded = false;
+
+showMoreBtn.addEventListener("click", () => {
+
+    expanded = !expanded;
+
+    hiddenProjects.forEach(project => {
+        project.style.display = expanded ? "block" : "none";
+    });
+
+    showMoreBtn.innerHTML = expanded
+        ? "Show Less ▲"
+        : "Show More Projects ▼";
+
+});
 
   // Function to clear the chat messages
   function clearChat() {

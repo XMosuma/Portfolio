@@ -650,6 +650,34 @@ body{
     max-width: 70%;
 }
 
+/* Hide extra projects */
+.hidden-project{
+    display:none;
+}
+
+/* Center button */
+.show-more-container{
+    text-align:center;
+    margin-top:3rem;
+}
+
+.show-more-btn{
+    padding:1rem 3rem;
+    font-size:1.8rem;
+    background:var(--yellow);
+    color:blue;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.show-more-btn:hover{
+    background:green;
+    transform:scale(1.05);
+}
+
+
 /* footer */
 /* Footer Styling */
 .footer {
