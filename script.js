@@ -58,8 +58,8 @@ showMoreBtn.addEventListener("click", () => {
     });
 
     showMoreBtn.innerHTML = expanded
-        ? "Show Less ▲"
-        : "Show More Projects ▼";
+    ? "Show Less \u25B2"
+    : "Show More Projects \u25BC";
 
 });
 
@@ -102,7 +102,7 @@ showMoreBtn.addEventListener("click", () => {
       education: 'I hold a Diploma in Computer System Engineering, which I completed in 2020.',
       school: 'I attended Hlanganani Secondary School from 2011 to 2015, where I focused on subjects such as mathematics, science.',
       university: 'I completed my Diploma at Tshwane University of Technology, where I majored in Computer System Engineering and gained a strong foundation in software development and problem-solving.',
-      portfolio: 'My portfolio showcases my expertise in web and mobile development. Let me know if you’d like more details on specific projects!',
+     portfolio: "My portfolio showcases my expertise in web and mobile development. Let me know if you'd like more details on specific projects!",
       about: `Here are a few things about me:
         1. Curiosity - I am open to new ideas and fresh perspectives.
         2. I am always ready to challenge myself. I never stop improving and learning.

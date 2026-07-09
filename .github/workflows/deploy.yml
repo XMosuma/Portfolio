@@ -28,4 +28,18 @@ jobs:
           aws s3 sync . s3://portfolio-bucket-web \
             --delete \
             --exclude ".git/*" \
+            --exclude ".github/*" \
+            --content-type "text/html; charset=utf-8" \
+            --exclude "*" --include "*.html"
+          
+          aws s3 sync . s3://portfolio-bucket-web \
+            --delete \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --content-type "application/javascript; charset=utf-8" \
+            --exclude "*" --include "*.js"
+          
+          aws s3 sync . s3://portfolio-bucket-web \
+            --delete \
+            --exclude ".git/*" \
             --exclude ".github/*"
